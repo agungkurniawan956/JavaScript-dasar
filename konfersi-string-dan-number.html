@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfersi String dan Number</title>
+  </head>
+  <body>
+    <h1>Konfersi String dan Number</h1>
+    <p>Berikut beberapa code NaN :</p>
+    <p>parseInt, parseFloat, Number, toString dan isNan.</p>
+
+    <script>
+      const value1 = parseInt('1');
+      const value2 = 1;
+      const value3 = 4;
+      const total = value1 + value2;
+      const jumlah = value2.toString() + value3.toString();
+
+      document.writeln(`<p> ${total} </p>`);
+
+      document.writeln(`<p> ${jumlah} </p>`);
+
+      document.writeln(`<p>${parseInt('1.9')}`); // angka di belakang koma tidak akan di baca
+      document.writeln(`<p>${parseFloat('1.1')}`); // floating point
+      document.writeln(`<p>${Number('1.9')}`); // fleksible
+      document.writeln(`<p>${Number('2')}`);
+
+      // NaN (Not a Number  )
+      document.writeln(`<p>${parseInt('1salah')}`);
+      document.writeln(`<p>${parseInt('a1salah')}`);
+      document.writeln(`<p>${parseInt('salah')}`);
+
+      document.writeln(`<p>${parseFloat('1.1text')}`);
+      document.writeln(`<p>${parseFloat('a1.1text')}`);
+      document.writeln(`<p>${parseFloat('text')}`);
+
+      document.writeln(`<p>${Number('5alah')}`);
+      document.writeln(`<p>${Number('a5alah')}`);
+      document.writeln(`<p>${Number('salah')}`);
+
+      // isNaN, isNaN akan menghasilkan true atau false
+      document.writeln(`<p>${isNaN('5')}`);
+      document.writeln(`<p>${isNaN('salah')}`);
+      document.writeln(`<p>${isNaN(NaN)}`);
+    </script>
+  </body>
+</html>

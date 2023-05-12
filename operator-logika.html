@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika</title>
+  </head>
+  <body>
+    <h1>Operator Logika</h1>
+    <p>Berikut Ini Adalah Operator Logika :</p>
+    <p>&& And, || OR, dan ! Kebalikan.</p>
+    <p>&& : Apabila keduanya bernial true maka akan menghasilkan true.</p>
+    <p>|| : Apabila Salah satunya bernilai true maka hasilnya akan true.</p>
+
+    <script>
+      const nilaiUjian = 71;
+      const nilaiAbsensi = 61;
+
+      const lulusUjian = nilaiUjian > 70;
+      const lulusAbsensi = nilaiAbsensi > 70;
+
+      let lulus = lulusUjian && lulusAbsensi;
+      document.writeln('<p>' + lulus + '</p>');
+
+      lulus = lulusUjian || lulusAbsensi;
+      document.writeln(lulus);
+    </script>
+  </body>
+</html>

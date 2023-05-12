@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Augmented Assignments</title>
+  </head>
+  <body>
+    <h1>Operator Augmentd Assgntments</h1>
+    <p>Berikut Ini adalah contoh dalam basa JavaScript :</p>
+    <p>+=, -=, *=, **=, /= dan %=.</p>
+
+    <script>
+      let result = 1 + 6; // 3
+      document.writeln('<p>1 + 6 = ' + result + '</p>');
+      let originalResult = result;
+
+      result += 1; // 4
+      document.writeln('<p>' + originalResult + ' + 1 = ' + result + '</p>');
+      originalResult = result;
+
+      result -= 2; // 2
+      document.writeln('<p>' + originalResult + ' - 2 = ' + result + '</p>');
+      originalResult = result;
+
+      result *= 2; // 4
+      document.writeln('<p>' + originalResult + ' x 2 = ' + result + '</p>');
+      originalResult = result;
+
+      result /= 2; // 2
+      document.writeln('<p>' + originalResult + ': 2 =' + result + '</p>');
+      originalResult = result;
+
+      result **= 2; // 2
+      document.writeln('<p>' + originalResult + '^2 =' + result + '</p>');
+      originalResult = result;
+
+      result %= 5;
+      document.writeln('<P>' + originalResult + ' % 5 =' + result + '</p>');
+    </script>
+  </body>
+</html>
