@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <h1>Tipe Data Obeject</h1>
+
+    <script>
+      const bio = {
+        'nama lengkap': 'Agung',
+        alamat: 'Bekasi',
+        umur: 24,
+      }; // membuat Object
+
+      bio['nama lengkap'] = 'Agung Kurniawan'; // mengganti value
+      bio['pekerjaan'] = 'Proggrammer'; // menabahkan properrty
+
+      console.info(`Nama : ${bio['nama lengkap']}`);
+      console.info(`Nama : ${bio.alamat}`);
+      console.info(`Nama : ${bio.umur}`);
+      console.info(`Nama : ${bio.pekerjaan}`);
+
+      delete bio['umur']; // Menghapus Object
+
+      console.table(bio);
+      document.writeln(bio['pekerjaan']);
+    </script>
+  </body>
+</html>
