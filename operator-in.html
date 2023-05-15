@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator in</title>
+  </head>
+  <body>
+    <h1>Operator in</h1>
+    <p>
+      Operator in digunakan untuk mengecek apakah obeject ada atau tidak, tapi
+      tidak mengecek value pada object.
+    </p>
+
+    <script>
+      const name = {
+        firstName: 'agung',
+        lastName: 'kurniawan',
+      };
+
+      if ('firstName' in name) {
+        alert(`Hello ${name.firstName}`);
+      } else {
+        alert('Hello');
+      }
+
+      const bio = {
+        name: 'Agung',
+        alamat: null,
+        umur: 24,
+      };
+
+      if ('nilai' in bio) {
+        alert(`Alamat : ${bio.alamat}`);
+      } else {
+        alert('Kosong');
+      }
+
+      const person = [null, 'Agung', undefined];
+      const result = 2 in person;
+      document.writeln(`<p>${result}</p>`);
+    </script>
+  </body>
+</html>
