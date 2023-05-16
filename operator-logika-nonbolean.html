@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika pada Non bolean</title>
+  </head>
+  <body>
+    <h1>Operator Logika Non bolean</h1>
+
+    <script>
+      // OR akan mengambil yg bernilai true, jika tidak ada akan mengambil data yg paling kanan
+      console.info('' || 'kosong');
+      console.info('nol' || 'kosong');
+      console.info('' || '');
+      console.info('' || []);
+      console.info(0 || false);
+      console.info(0 || undefined);
+
+      // contoh
+      const name = {
+        firstName: '',
+        lastName: 'Kurniawan',
+      };
+
+      const person = name.firstName || name.lastName;
+      console.info(person);
+    </script>
+  </body>
+</html>
