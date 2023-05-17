@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break and Continue</title>
+  </head>
+  <body>
+    <h1>Break and Continue</h1>
+    <hr />
+
+    <script>
+      // break
+      let i = 1;
+
+      while (true) {
+        document.writeln(
+          `<p>Perulangan ini akan berhenti pada perulangan ke 10, perulangan ke ${i} </p>`
+        );
+        i++;
+        if (i >= 11) {
+          break;
+        }
+      }
+
+      // continue
+      for (let x = 0; x <= 99; x++) {
+        if (x % 2 === 0) {
+          continue;
+        }
+        document.writeln(`<p>Perulangan angka ganjil ${x} </p>`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>with statment</title>
+  </head>
+  <body>
+    <h1>With statment</h1>
+
+    <script>
+      // pada saat ini wtih statment tidak di rekomendasikan karan bisa membuat ambigu atau membingungkan
+      const person = {
+        firstName: 'Agung',
+        lastName: 'Kurniawan',
+      };
+
+      with (person) {
+        console.log(firstName);
+        console.log(lastName);
+      }
+    </script>
+  </body>
+</html>

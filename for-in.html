@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For in</title>
+  </head>
+  <body>
+    <h1>For in</h1>
+    <hr />
+
+    <script>
+      // for in pada object
+      const bio = {
+        name: 'Agung',
+        address: 'Bekasi',
+        age: '24',
+      };
+
+      for (const property in bio) {
+        document.writeln(`<p>${property} : ${bio[property]} </p>`);
+      }
+
+      // for in pada index namun tidak disarankan untuk index
+      const student = ['Agung', 'HArist', 'Lasbi'];
+      for (const index in student) {
+        document.writeln(`<p>${index} : ${student[index]} </p>`);
+      }
+    </script>
+  </body>
+</html>
