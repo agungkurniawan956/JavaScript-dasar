@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Retur Value</title>
+  </head>
+  <body>
+    <h1>Function Return Value</h1>
+    <hr />
+
+    <script>
+      function name(firstName, lastName) {
+        const say = `Selamat Siang ${firstName} ${lastName}`;
+        return say;
+      }
+
+      const great = name('Agung', 'Kurniawan');
+      document.writeln(`<p>${great}</p>`);
+
+      function score(value) {
+        if (value > 91) {
+          return 'A';
+        }
+        if (value > 81) {
+          return 'B';
+        }
+        if (value > 71) {
+          return 'C';
+        }
+        if (value > 1) {
+          return 'C';
+        }
+      }
+
+      const finalScore = score(95);
+      document.writeln(`Nilai : ${finalScore}`);
+
+      function isContains(array, searchValue) {
+        for (const element of array) {
+          console.info(`${element}`);
+          if (element === searchValue) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      const array = [54, 47, 45, 3, 6, 6, 7, 3, 9];
+      const search = 45;
+      const found = isContains(array, search);
+      document.writeln(`<p>${found}</p>`);
+    </script>
+  </body>
+</html>
