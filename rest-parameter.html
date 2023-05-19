@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Parameter</title>
+  </head>
+  <body>
+    <h1>Rest Parameter</h1>
+    <script>
+      function raport(name, ...score) {
+        let total = 0;
+        for (const value of score) {
+          total += value;
+        }
+        document.writeln(`<p>Total ${name} is ${total}</p>`);
+      }
+
+      raport('Apple', 4, 6, 2, 42, 2);
+
+      const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      raport('Orange', ...number); //spreed syntax cukup tambahkan titik 3 sebelum aray
+    </script>
+  </body>
+</html>
