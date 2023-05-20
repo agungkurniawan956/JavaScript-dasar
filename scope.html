@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope</title>
+  </head>
+  <body>
+    <h1>Scope</h1>
+
+    <script>
+      // global scope
+      let counter = 0;
+
+      function countMe() {
+        // local scope
+        counter++;
+      }
+
+      function otherCount() {
+        // local scope
+      }
+
+      countMe();
+      countMe();
+
+      console.log(counter);
+
+      function first() {
+        let firstVariable = 'first';
+        console.log(firstVariable);
+
+        function nestedFunction() {
+          // local scope nested function
+        }
+      }
+
+      function second() {
+        let secondVariable = 'second';
+      }
+
+      first();
+      second();
+
+      // console.log(first());
+      console.log(secondVariable); // error
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonymous Function</title>
+  </head>
+  <body>
+    <h1>Anonymous Function</h1>
+
+    <script>
+      // anonymous function dengan variable
+      const say = function (name) {
+        document.writeln(`<p>Selamat Siang ${name}</p>`);
+      };
+
+      say('Agung');
+
+      // anonymous function di parameter
+      function insertName(callback) {
+        callback('Agung');
+      }
+
+      insertName(function (name) {
+        document.writeln(`<p>Hii ${name}</p>`);
+      });
+    </script>
+  </body>
+</html>
