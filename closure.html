@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+  </head>
+  <body>
+    <h1>Closure</h1>
+    <p>Jarang Digunakan</p>
+
+    <script>
+      function createAdder(value) {
+        const owner = 'Agung';
+        function add(param) {
+          console.info(owner);
+          return value + param;
+        }
+        return add;
+        // console.info(createAdder(5), add(4));
+      }
+
+      const addTow = createAdder(2);
+
+      console.info(addTow(9));
+
+      const addFive = createAdder(5);
+      console.info(addFive(5));
+      //
+    </script>
+  </body>
+</html>
