@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masalah Variable Var</title>
+  </head>
+  <body>
+    <h1>Masalah Variable Var</h1>
+    <hr />
+
+    <script>
+      let i = 19;
+
+      for (let i = 0; i < 9; i++) {
+        console.info(`Local i ${i}`);
+      }
+
+      console.info(`Global i ${i}`);
+
+      var j = 19;
+
+      for (var j = 0; j < 9; j++) {
+        console.info(`local j ${j}`);
+      }
+
+      console.info(`Global j ${j}`); // akan sangan membingungkan kenapa var sudah tidak disaran kan karna tidak memiliki scope
+    </script>
+  </body>
+</html>
