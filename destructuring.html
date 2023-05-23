@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <h1>Destructuring</h1>
+
+    <script>
+      const names = ['Agung', 'Harist', 'Lasbi', 'Irianto', 'Ferdi'];
+      const [firstPerson, secondPerson, thridPerson, ...others] = names;
+
+      // dibawah ini contoh manual
+      // const firstPerson = names[1];
+      // const secondPerson = names[2];
+      // const thridPerson = names[3];
+
+      console.info(firstPerson);
+      console.info(secondPerson);
+      console.info(thridPerson);
+      console.info(others);
+
+      //  destructuring pada object
+      const bio = {
+        firstName: 'Agung',
+        lastName: 'Kurniawan',
+        address: {
+          street: 'Jl.Kosong',
+          city: 'Tangerang',
+          country: 'Indonesia',
+        },
+        hobby: 'Coding',
+        chanel: 'InstCode',
+      };
+
+      const {
+        firstName,
+        lastName,
+        address: { street, city, country }, //destructuring nested object
+        ...ext
+      } = bio;
+
+      console.info(firstName);
+      console.info(lastName);
+      console.info(country);
+      console.info(city);
+      console.info(street);
+      console.info(ext);
+
+      // destructuring di function parameter
+      {
+        function displayPerson({ firstName, secondName }) {
+          console.info(firstName);
+          console.info(secondName);
+        }
+
+        const person = {
+          firstName: 'Lasbi',
+          secondName: 'Noveni',
+        };
+        displayPerson(person);
+      }
+
+      {
+        function sum([first, second]) {
+          return first + second;
+        }
+
+        console.info(sum([1, 2]));
+        console.info(sum([15, 5]));
+      }
+
+      // default value
+      {
+        const name = [];
+        const [
+          firstPerson,
+          secondPerson = 'Kurniawan',
+          thridPerson = 'Harist',
+        ] = name;
+
+        console.info(firstPerson);
+        console.info(secondPerson);
+        console.info(thridPerson);
+      }
+
+      {
+        const name = {
+          firstName: 'Yuli',
+          lastName: 'Kartika',
+        };
+
+        let {
+          firstName: namaDepan, // mengganti denga varible lain
+          middleName: namaTengah = 'Agung',
+          lastName: namaBelakang = 'any Person',
+        } = name;
+
+        console.info(namaDepan);
+        console.info(namaTengah);
+        console.info(namaBelakang);
+      }
+    </script>
+  </body>
+</html>
