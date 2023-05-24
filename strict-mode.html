@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strict Mode</title>
+  </head>
+  <body>
+    <h1>Strict Mode</h1>
+
+    <script>
+      function strictMode() {
+        'use strict';
+        const person = {
+          name: 'Agung Kurniawan',
+        };
+
+        with (person) {
+          // error karna with tidak di sarankan untuk penggunaan use strict
+          console.info(name);
+        }
+      }
+
+      strictMode();
+    </script>
+  </body>
+</html>
