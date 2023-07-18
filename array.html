@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Javascript</title>
+  </head>
+  <body>
+    <h1>Array Javascript</h1>
+
+    <script>
+      let name = [];
+      // menambahkan elmen pada array
+      name[0] = 'agung';
+      name[1] = 'Adlan';
+      name[2] = 'Yuli';
+
+      console.info(name);
+
+      // menghapus elemen pada array
+      name[2] = undefined;
+
+      console.info(name);
+
+      // menampilkan seluruh isi pada array
+      for (let i = 0; i < name.length; i++) {
+        console.info(`No. ${i + 1} ${name[i]}`);
+      }
+
+      // Method Pada Array
+      // 1.Join
+      console.info(name.join(' - '));
+
+      // 2.push & pop
+      name.push('Harist'); //menambahkan data pada array
+      console.info(name);
+
+      name.pop(); //menghapus isi array terakhir
+      console.info(name);
+
+      // 3.shift & unshift
+      name.shift(); //menghapus bagian depan
+      console.info(name);
+
+      name.unshift('Kurniawan'); //menbahkan dari depan
+      console.info(name);
+
+      // var arr = ['Agung', 'kurniawan', 'Harist', 'Lasbi'];
+
+      // console.info(arr);
+      // console.info(arr[1]);
+      // console.info(arr.join('-'));
+      // arr.push('Irianto');
+      // console.info(arr.length);
+      // console.info(arr);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForEach | Javascript</title>
+  </head>
+  <body>
+    <h1>Foreach</h1>
+    <script>
+      // foreach
+      let angka = [1, 2, 3, 4, 5, 6, 7, 8];
+      let people = ['Agung', 'Kurniawan', 'Harist'];
+      let cetak = function (e) {
+        console.info(e);
+      };
+
+      let cetakNama = function (e, i) {
+        console.info(`Mahasiswa ke - ${i + 1} adalah : ${e}`);
+      };
+
+      people.forEach(cetakNama);
+
+      angka.forEach(cetak);
+
+      //map
+      let number = [2, 8, 4, 6, 1, 3, 5, 7, 9];
+      let hasil = number.map(function (e) {
+        return e;
+      });
+
+      console.info(hasil.join(' - '));
+
+      // sort
+      let sortir = number.sort();
+      console.log(sortir.join(' - '));
+
+      var data = ['Apel', 'Jeruk', 'Mangga', 'Pisang']; // Contoh data string
+
+      for (var i = 0; i < data.length; i++) {
+        var urutan = i + 1;
+        var dataDenganNomorUrut = urutan + '. ' + data[i];
+        console.log(dataDenganNomorUrut);
+      }
+    </script>
+  </body>
+</html>
