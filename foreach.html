@@ -15,8 +15,10 @@
         console.info(e);
       };
 
-      let cetakNama = function (e, i) {
-        console.info(`Mahasiswa ke - ${i + 1} adalah : ${e}`);
+      console.info('foreach');
+
+      let cetakNama = function (v, j) {
+        console.info(`Mahasiswa ke - ${j + 1} adalah : ${v}`);
       };
 
       people.forEach(cetakNama);

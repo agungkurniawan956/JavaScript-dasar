@@ -14,6 +14,8 @@
       name[0] = 'agung';
       name[1] = 'Adlan';
       name[2] = 'Yuli';
+      name[3] = 'Lasbi';
+      name[4] = 'Irianto';
 
       console.info(name);
 
@@ -44,6 +46,13 @@
 
       name.unshift('Kurniawan'); //menbahkan dari depan
       console.info(name);
+
+      // splice & slice
+      name.splice(1, 2, 'Ferdi', 'Wanabud'); //
+      console.info(name.join(' - '));
+
+      let nameSlice = name.slice(1, 4);
+      console.info(nameSlice.join(' - '));
 
       // var arr = ['Agung', 'kurniawan', 'Harist', 'Lasbi'];
 
