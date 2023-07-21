@@ -56,12 +56,21 @@
 
       // var arr = ['Agung', 'kurniawan', 'Harist', 'Lasbi'];
 
-      // console.info(arr);
-      // console.info(arr[1]);
-      // console.info(arr.join('-'));
-      // arr.push('Irianto');
-      // console.info(arr.length);
-      // console.info(arr);
+      // filter
+      let angka = [1, 2, 3, 4, 5, 6, 7, 9];
+      let people = ['Agung', 'Agus', 'Agun', 'anggi'];
+
+      let angka1 = angka.filter(function (y) {
+        return y >= 'rian';
+      });
+      console.info(angka1.join(' '));
+
+      // find
+      let angka2 = angka.find(function (b) {
+        return b > 4;
+      });
+
+      console.info(angka2);
     </script>
   </body>
 </html>
