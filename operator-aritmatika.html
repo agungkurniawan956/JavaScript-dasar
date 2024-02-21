@@ -8,23 +8,29 @@
   </head>
   <body>
     <h1>Operator Aritmatika</h1>
-    <p>Berikut Ini Adalah Operator Aritmatika Pada Java Script +, -, *, / .</p>
+    <p>
+      Berikut Ini Adalah Operator Aritmatika Pada Java Script +, -, *, /, %.
+    </p>
 
     <script>
-      let result = 1 + 2; // 3
-      document.writeln('<p>1 + 2 = ' + result + '</p>');
+      let result = 1 + 9; // 10
+      document.writeln('<p>1 + 9 = ' + result + '</p>');
       let originalResult = result;
 
-      result = result - 1; // 2
+      result = result - 1; // 9
       document.writeln('<p>' + originalResult + ' - 1 = ' + result + '</p>');
       originalResult = result;
 
-      result = result * 2; // 4
+      result = result * 2; // 18
       document.writeln('<p>' + originalResult + ' x 2 = ' + result + '</p>');
       originalResult = result;
 
-      result = result / 2; // 2
+      result = result / 2; // 9
       document.writeln('<p>' + originalResult + ' : 2 = ' + result + '</p>');
+      originalResult = result;
+
+      result = result % 2;
+      document.writeln('<p>' + originalResult + ' % 2 =' + result + '</p>');
     </script>
   </body>
 </html>

@@ -11,29 +11,29 @@
     <p>Berikut Ini Adalah contoh operator Perbandingan :</p>
 
     <script>
-      let result = 5 == 5;
-      document.writeln('<p>' + result + '</p>');
+      let result = 5 == '5';
+      document.writeln('<p> 5 == 5 : ' + result + '</p>');
 
-      result = 5 == '5';
-      document.writeln('<p>' + result + '</p>');
+      result = 5 === '5';
+      document.writeln("<p>5 === '5' : " + result + '</p>');
 
-      result = 5 > 9; // false
-      document.writeln('<p>' + result + '</p>');
+      result = 5 > 5; // false
+      document.writeln('<p> 5 > 5 : ' + result + '</p>');
 
-      result = 5 < 9; // true
-      document.writeln('<p>' + result + '</p>');
+      result = 5 >= 5; //true
+      document.writeln('<p>5 >= 5 : ' + result + '</p>');
 
-      result = 5 >= 5;
-      document.writeln('<p>' + result + '</p>');
+      result = 5 < 5; // true
+      document.writeln('<p>5 < 5 : ' + result + '</p>');
 
-      result = 5 <= '5';
-      document.writeln('<p>' + result + '</p>');
+      result = 5 <= 5; //true
+      document.writeln("<p>5 <= '5' : " + result + '</p>');
 
-      result = 5 != '5';
-      document.writeln('<p>' + result + '</p>');
+      result = 5 != 5; //false
+      document.writeln('<p>5 != 5 : ' + result + '</p>');
 
-      result = 5 !== '5';
-      document.writeln('<p>' + result + '</p>');
+      result = 5 !== '5'; //false
+      document.writeln("<p>5 !== '5' : " + result + '</p>');
     </script>
   </body>
 </html>

@@ -8,6 +8,11 @@
   </head>
   <body>
     <h1>String Template</h1>
+    <p>
+      String Template ialah menggunakan backtik dan ini lebih over power karena,
+      kita bisa menggabungkan variable tanpa tanda + dan dapat melakukan
+      multiLine.
+    </p>
     <script>
       const firstName = 'Agung';
       const lastName = 'Kurniawan';
@@ -18,7 +23,7 @@
       menggunakan backtik`;
 
       const template = `Name : ${firstName} ${lastName}`;
-      console.info(template);
+      document.writeln(template);
 
       const lulus = `Lulus : ${nilai > 75}`;
       console.info(lulus);

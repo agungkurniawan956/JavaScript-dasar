@@ -12,32 +12,32 @@
     <p>+=, -=, *=, **=, /= dan %=.</p>
 
     <script>
-      let result = 1 + 6; // 3
+      let result = 1 + 6; // 7
       document.writeln('<p>1 + 6 = ' + result + '</p>');
       let originalResult = result;
 
-      result += 1; // 4
+      result += 1; // 8
       document.writeln('<p>' + originalResult + ' + 1 = ' + result + '</p>');
       originalResult = result;
 
-      result -= 2; // 2
+      result -= 2; // 6
       document.writeln('<p>' + originalResult + ' - 2 = ' + result + '</p>');
       originalResult = result;
 
-      result *= 2; // 4
+      result *= 2; // 12
       document.writeln('<p>' + originalResult + ' x 2 = ' + result + '</p>');
       originalResult = result;
 
-      result /= 2; // 2
-      document.writeln('<p>' + originalResult + ': 2 =' + result + '</p>');
+      result /= 2; // 6
+      document.writeln('<p>' + originalResult + ': 2 = ' + result + '</p>');
       originalResult = result;
 
-      result **= 2; // 2
-      document.writeln('<p>' + originalResult + '^2 =' + result + '</p>');
+      result **= 2; // 36
+      document.writeln('<p>' + originalResult + '^2 = ' + result + '</p>');
       originalResult = result;
 
       result %= 5;
-      document.writeln('<P>' + originalResult + ' % 5 =' + result + '</p>');
+      document.writeln('<P>' + originalResult + ' % 5 = ' + result + '</p>');
     </script>
   </body>
 </html>

@@ -15,17 +15,18 @@
       const value1 = parseInt('1');
       const value2 = 1;
       const value3 = 4;
+      const value4 = 'Salah';
       const total = value1 + value2;
       const jumlah = value2.toString() + value3.toString();
 
-      document.writeln(`<p> ${total} </p>`);
+      document.writeln(`<p>parseInt('1') + 1 = ${total} </p>`);
 
-      document.writeln(`<p> ${jumlah} </p>`);
+      document.writeln(`<p>toString(1) + toString(4) = ${jumlah} </p>`);
 
-      document.writeln(`<p>${parseInt('1.9')}`); // angka di belakang koma tidak akan di baca
-      document.writeln(`<p>${parseFloat('1.1')}`); // floating point
-      document.writeln(`<p>${Number('1.9')}`); // fleksible
-      document.writeln(`<p>${Number('2')}`);
+      document.writeln(`<p>parseIn('1.9') = ${parseInt('1.9')}`); // angka di belakang koma tidak akan di baca
+      document.writeln(`<p>parseFloat('1.1') = ${parseFloat('1.1')}`); // floating point
+      document.writeln(`<p>Number('1.9') = ${Number('1.9')}`); // fleksible
+      document.writeln(`<p>Number('2') = ${Number('2')}`);
 
       // NaN (Not a Number  )
       document.writeln(`<p>${parseInt('1salah')}`);
@@ -41,9 +42,10 @@
       document.writeln(`<p>${Number('salah')}`);
 
       // isNaN, isNaN akan menghasilkan true atau false
-      document.writeln(`<p>${isNaN('5')}`);
-      document.writeln(`<p>${isNaN('salah')}`);
-      document.writeln(`<p>${isNaN(NaN)}`);
+      document.writeln(`<p>isNaN('5') = ${isNaN(value4)}`);
+      document.writeln(`<p>isNaN('salah') = ${isNaN('salah')}`);
+      document.writeln(`<p>isNaN('5salah') = ${isNaN('5salah')}`);
+      document.writeln(`<p>isNaN(NaN) = ${isNaN(NaN)}`);
     </script>
   </body>
 </html>

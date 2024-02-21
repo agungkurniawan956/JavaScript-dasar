@@ -14,16 +14,19 @@
     <p>|| : Apabila Salah satunya bernilai true maka hasilnya akan true.</p>
 
     <script>
-      const nilaiUjian = 71;
-      const nilaiAbsensi = 61;
+      const nilaiUjianTulis = 70;
+      const nilaiUjianLisan = 71;
+      const nilaiAbsensi = 71;
 
-      const lulusUjian = nilaiUjian > 70;
+      const lulusUjianTulis = nilaiUjianTulis > 70;
+      const lulusUjianLisan = nilaiUjianLisan >= 71;
+
       const lulusAbsensi = nilaiAbsensi > 70;
 
-      let lulus = lulusUjian && lulusAbsensi;
-      document.writeln('<p>' + lulus + '</p>');
+      let lulus = lulusUjianTulis && lulusAbsensi && lulusUjianLisan;
+      document.writeln('<p> Lulus/Tidak Lulus = ' + lulus + '</p>');
 
-      lulus = lulusUjian || lulusAbsensi;
+      lulus = lulusUjianTulis || lulusAbsensi || lulusUjianLisan;
       document.writeln(lulus);
     </script>
   </body>
