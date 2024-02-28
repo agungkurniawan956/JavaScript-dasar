@@ -11,18 +11,20 @@
 
     <script>
       let name;
+      console.log(name);
+      name = 'Agung';
       if (name === undefined) {
-        console.info('UNDEFINED');
+        console.info('Name UNDEFINED');
       } else {
-        console.info('DEFINED');
+        console.info('Name DEFINED');
       }
 
       const alamat = ['Bekasi', 'Tangerang', 'Kuningan'];
 
       if (alamat[3] === undefined) {
-        console.info('UNDEFINED');
+        console.info('Alamat UNDEFINED');
       } else {
-        console.info('DEFINED');
+        console.info('Alamat DEFINED');
       }
 
       const bio = {
@@ -33,6 +35,15 @@
         console.info('Object UNDEFINED');
       } else {
         console.info('Object Defined');
+      }
+
+      const object = {};
+
+      console.log(object.name);
+      if (object.name === undefined) {
+        console.log('object undefined');
+      } else {
+        console.log('object defined');
       }
     </script>
   </body>

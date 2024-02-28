@@ -10,6 +10,18 @@
     <h1>Tipe Data Obeject</h1>
 
     <script>
+      const customer = {
+        nama: 'Lasbi',
+        alamat: 'Lampung, Indonesia',
+        umur: 32,
+        ttl: 'Lampung, 09 Februari 1989',
+      };
+
+      console.table(customer);
+      console.info(`Nama : ${customer.nama}`);
+      delete customer['umur'];
+      console.log(customer);
+
       const bio = {
         'nama lengkap': 'Agung',
         alamat: 'Bekasi',
@@ -20,9 +32,9 @@
       bio['pekerjaan'] = 'Proggrammer'; // menabahkan properrty
 
       console.info(`Nama : ${bio['nama lengkap']}`);
-      console.info(`Nama : ${bio.alamat}`);
-      console.info(`Nama : ${bio.umur}`);
-      console.info(`Nama : ${bio.pekerjaan}`);
+      console.info(`Alamat : ${bio.alamat}`);
+      console.info(`Umur : ${bio.umur}`);
+      console.info(`Pekerjaan : ${bio.pekerjaan}`);
 
       delete bio['umur']; // Menghapus Object
 

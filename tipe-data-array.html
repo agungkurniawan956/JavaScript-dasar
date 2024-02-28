@@ -23,16 +23,29 @@
 
       names.push('Hsrist', 'Lasbi', 'Irianto', 'Ferdi', 'Ikhwan');
 
-      console.table(names);
+      console.table(names); //menampilkan array dalam bentuk table
 
       console.info(names[2]); // Mengambil index
 
-      names[1] = 'Deni';
+      names[1] = 'Deni'; // mngganti value dari index array yang di pilih
+      console.table(names);
 
-      console.table(names); // Mengubah Array
+      delete names[1]; // mengahpus index array tanpa menggeser index di bawahnya
+      console.table(names);
 
-      delete names[1];
+      // menambahkan data number
+      names.push(1, 2, 3, 4, 5);
+      console.table(names);
+      // Menambahkan array dalam array
+      names.push([
+        'Agung Kurniawan',
+        'Kuningan, 06081998',
+        'Bekasi, Jawa Barat',
+      ]);
+      console.table(names);
 
+      // mengambalikan index yg di hapus dan memberikan value yg berbeda
+      names[1] = 'Deni Kembali Lagi';
       console.table(names);
     </script>
   </body>

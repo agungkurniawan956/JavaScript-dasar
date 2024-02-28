@@ -12,11 +12,13 @@
     <script>
       const login = confirm('Yakin Mau Masuk?');
 
-      if (login) {
-        const nama = prompt('Masukan Nama Anda?');
-        alert(`Selamat Belanja ${nama} !!`);
+      console.log(login);
+      const nama = prompt('Masukan Nama Anda?');
+      if (nama == 'Agung') {
+        alert(`Wellcome ${nama} !!`);
       } else {
-        alert('Batal Login!!');
+        alert('Login Gagal');
+        // return nama;
       }
     </script>
   </body>
