@@ -23,8 +23,17 @@
 
     <script>
       const bio = {};
+      let country;
 
-      let country = bio?.address?.country;
+      // jika tidak menggunakan optional chaining
+      if (bio.address !== undefined && bio.address !== null) {
+        country = bio.address.country;
+      }
+
+      document.writeln(`<p>t${country}</p>`);
+
+      // menggunakan optional chaining
+      country = bio?.address?.country;
 
       document.writeln(`<p>${country}</p>`);
 

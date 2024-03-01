@@ -10,13 +10,21 @@
     <h1>Operator Logika Non bolean</h1>
 
     <script>
-      // OR akan mengambil yg bernilai true, jika tidak ada akan mengambil data yg paling kanan
-      console.info('' || 'kosong');
-      console.info('nol' || 'kosong');
-      console.info('' || '');
-      console.info('' || []);
-      console.info(0 || false);
-      console.info(0 || undefined);
+      // OR akan mengambil yg pertama bernilai true, jika tidak ada akan mengambil data yg paling kanan/terakhir
+      console.info('' || 'kosong'); // 'kosong'
+      console.info('nol' || 'kosong'); //'nol'
+      console.info('' || ''); // '' yg paling belakang
+      console.info('' || []); // []
+      console.info(0 || false); //false
+      console.info(0 || undefined); //undefined
+
+      // AND akan mengambil yg pertama bernilai false, jika tidak ada akan mengambil data yg paling kanan/terakhir
+      console.info('' && 'kosong'); // 'kosong'
+      console.info('nol' && 'kosong'); //'nol'
+      console.info('' && ''); // '' yg paling belakang
+      console.info('' && []); // []
+      console.info(0 && false); //false
+      console.info(0 && undefined); //undefined
 
       // contoh
       const name = {
