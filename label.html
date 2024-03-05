@@ -11,12 +11,12 @@
     <hr />
 
     <script>
-      loopi: for (let i = 0; i < 10; i++) {
+      loopi: for (let i = 0; i <= 5; i++) {
         loopj: for (let j = 0; j < 100; j++) {
-          if (j > 10) {
-            continue loopi;
-          }
-          document.writeln(`<p>${i} - ${j}</p>`);
+          // if (j > 10) {
+          //   continue loopi;
+          // }
+          console.info(`${i} - ${j}`);
         }
       }
     </script>

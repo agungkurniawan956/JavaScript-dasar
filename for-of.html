@@ -11,16 +11,27 @@
     <hr />
 
     <script>
-      // for of dapat digunakan pada type data iterable sepereti aray, string dll
+      // for of dapat digunakan pada type data iterable sepereti aray, string dll, tidak di sarankan untuk object
       const person = ['Agung', 'Harist', 'Lasbi'];
       for (const name of person) {
         document.writeln(`<p>${name} </p>`);
       }
 
+      const bioData = {
+        name: 'Agung kurniawan',
+        age: 25,
+        adress: 'Bekasi',
+      };
+
       const characters = 'Agung Kurniawan';
       for (const names of characters) {
         document.writeln(`<p>${names} </p>`);
       }
+
+      // jika digunakan pada object maka akan eror aktifkan kode di bawah jika ingin melihatnya
+      // for (const data of bioData) {
+      //   document.writeln(`<p>${data}</p>`);
+      // }
     </script>
   </body>
 </html>

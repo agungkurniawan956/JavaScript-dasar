@@ -16,8 +16,10 @@
         lastName: 'Kurniawan',
       };
 
+      const firstName = 'Lasbi';
+      const lastName = 'Noveni';
       with (person) {
-        console.log(firstName);
+        console.log(firstName); // hasil yg keluar adalah Agung bukan Lasbi, ini lah yg membuat ambigu
         console.log(lastName);
       }
     </script>
