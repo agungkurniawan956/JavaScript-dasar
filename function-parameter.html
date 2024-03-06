@@ -10,12 +10,20 @@
     <h1>Function Parameter</h1>
 
     <script>
+      // contoh 2 parameter
       function sayhello(firstName, lastName) {
         document.writeln(`<p>Selamt siang ${firstName} ${lastName} </p>`);
       }
 
       sayhello('Agung', 'Kurniawan');
       sayhello('Harist', 'Maulana');
+
+      // contoh 1 parameter
+      function great(fullName) {
+        document.writeln(`<p>Selamat Sore ${fullName}</p>`);
+      }
+      const peopel = prompt('Masukan Nama:');
+      great(peopel);
     </script>
   </body>
 </html>

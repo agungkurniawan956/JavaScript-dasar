@@ -10,6 +10,17 @@
     <h1>Default Parameter</h1>
 
     <script>
+      function order(customer, item, price, address, type = 'Random') {
+        // 'Random' adalah default parameter yg di berikan apabila parameter kosong
+        document.writeln(`<p>Nama : ${customer}</p>`);
+        document.writeln(`<p>Product : ${item}</p>`);
+        document.writeln(`<p>Type : ${type}</p>`);
+        document.writeln(`<p>Haraga : ${price}</p>`);
+        document.writeln(`<p>Alamat : ${address}</p>`);
+      }
+
+      order('Agung', 'Kaos', '30000', 'Pandeglang');
+
       function regis(name, gender = 'UNKNOW') {
         console.log(name);
         console.log(gender);

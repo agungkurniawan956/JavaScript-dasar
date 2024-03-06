@@ -22,19 +22,17 @@
       function score(value) {
         if (value > 91) {
           return 'A';
-        }
-        if (value > 81) {
+        } else if (value > 81) {
           return 'B';
-        }
-        if (value > 71) {
+        } else if (value > 71) {
           return 'C';
-        }
-        if (value > 1) {
-          return 'C';
+        } else {
+          return 'E';
         }
       }
 
-      const finalScore = score(95);
+      const nilai = prompt('Masukan angka yang mau di berikan:');
+      const finalScore = score(nilai);
       document.writeln(`Nilai : ${finalScore}`);
 
       function isContains(array, searchValue) {
@@ -47,8 +45,8 @@
         return false;
       }
 
-      const array = [54, 47, 45, 3, 6, 6, 7, 3, 9];
-      const search = 45;
+      const array = [54, 47, 45, 3, 6, 6, 7, 3, 9]; // jika ada data yg sama maka data yg di ambil adalah data yg pertama
+      const search = 6;
       const found = isContains(array, search);
       document.writeln(`<p>${found}</p>`);
     </script>
