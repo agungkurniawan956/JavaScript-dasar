@@ -20,20 +20,27 @@
 
       function otherCount() {
         // local scope
+        countMe();
       }
 
-      countMe();
-      countMe();
+      countMe(); // 1
+      countMe(); // 2
+      otherCount(); // 3
 
       console.log(counter);
 
       function first() {
         let firstVariable = 'first';
-        console.log(firstVariable);
 
         function nestedFunction() {
           // local scope nested function
+          let variableNestedFunction = 'Nested first';
+          document.writeln(`<p>Ini variable Dari Nested Function</p>`);
         }
+
+        nestedFunction();
+        console.log(firstVariable);
+        // console.log(variableNestedFunction);// error
       }
 
       function second() {
@@ -44,7 +51,7 @@
       second();
 
       // console.log(first());
-      console.log(secondVariable); // error
+      // console.log(secondVariable); // error
     </script>
   </body>
 </html>

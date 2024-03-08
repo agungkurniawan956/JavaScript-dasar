@@ -10,13 +10,22 @@
     <h1>Function Recursive</h1>
 
     <script>
+      // factorial biasa
       function factorial(value) {
         let result = 1;
+
         for (let i = 1; i <= value; i++) {
           result *= i;
+          console.info(value);
         }
+
         return result;
       }
+
+      console.log(factorial(5));
+      console.log(1 * 2 * 3 * 4 * 5);
+
+      // menggunakan recursive
 
       function factorialRecursive(value) {
         if (value === 1) {
@@ -26,9 +35,7 @@
         }
       }
 
-      console.info(5 * 4 * 3 * 2 * 1);
-      console.info(factorial(5));
-      console.info(factorialRecursive(5));
+      console.log(factorialRecursive(5));
     </script>
   </body>
 </html>

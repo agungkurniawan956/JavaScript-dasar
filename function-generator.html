@@ -9,6 +9,7 @@
   <body>
     <h1>Function Generator</h1>
     <script>
+      // untuk membuat function generator tambahkan tanda bintang(*) setelah function, ini juga bersifat lazy
       function* generator() {
         yield 'Agung';
         yield 'Harist';
@@ -32,6 +33,8 @@
       for (const number of numbers) {
         console.info(number);
       }
+
+      console.info(names[0]); // hasilnya akan undifined, karena perlu di iterasi/ tidak bisa di panggil menggunakan index
     </script>
   </body>
 </html>
