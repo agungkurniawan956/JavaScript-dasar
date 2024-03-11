@@ -25,10 +25,11 @@
 
       contoh(); //window
 
+      // gunakan kata kunci this pada object
       const character = {
         name: 'Agung',
         sayHello: function (guest) {
-          console.info(`Hello ${guest} My Name Is ${this.name}`);
+          console.info(`Hello ${guest}, My name is ${this.name}`);
         },
       };
 

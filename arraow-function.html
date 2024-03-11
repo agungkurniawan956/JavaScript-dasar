@@ -8,7 +8,13 @@
   </head>
   <body>
     <h1>function Arrow</h1>
-
+    <p>Arrow function memiliki limitasi</p>
+    <ul>
+      <li>Tidak memiliki Arguments object</li>
+      <li>Tidak bisa menggunakan function generator</li>
+      <li>tidak bisa mengakses this</li>
+      <li>tidak bisa mengakses super</li>
+    </ul>
     <script>
       const sayHello = (name) => {
         const say = `Hello ${name}`;
@@ -17,11 +23,16 @@
 
       sayHello('Agung');
 
+      // arrow function bisa di buat tanpa block, jika hanya 1 baris, contohnya seperti dibawah ini
       const sum = (first, second) => first + second;
       console.info(sum(2, 5));
 
       const sayHi = (name) => console.info(`Hi ${name}`);
       sayHi('Agung');
+
+      function giveMeName(callback) {
+        callback('Agung');
+      }
 
       //anonymous function
       // giveMeName(function (name) {
@@ -29,10 +40,6 @@
       // });
 
       // arrow function sebagai parameter
-      function giveMeName(callback) {
-        callback('Agung');
-      }
-
       giveMeName((name) => console.info(`Nama : ${name}`));
     </script>
   </body>

@@ -14,11 +14,19 @@
       const person = {
         name: 'Agung',
         sayHello: (guest) => {
-          // jika menggunakan arrow function tidak dapat menggunakan this
+          // jika menggunakan arrow function pada object maka tidak dapat menggunakan this, argument, super
           console.info(`Hello ${guest}My Name is ${this.name}`);
         },
       };
       person.sayHello('Kurniawan');
+
+      const life = {
+        gender: 'CW',
+        greats: function (name) {
+          console.info(`Hello ${this.gender}, Kenalin aku ${name}`);
+        },
+      };
+      life.greats('Agung');
     </script>
   </body>
 </html>

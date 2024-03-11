@@ -11,6 +11,21 @@
     <hr />
 
     <script>
+      // ini tanpa menggunakan getter dan setter
+      const people = {
+        firstName: 'Yuli',
+        lastName: 'Kartika',
+        fullName: function () {
+          console.info(
+            `ini tanpa menggunakan Getter dan Setter ${this.firstName} ${this.lastName}`
+          );
+        },
+      };
+
+      people.firstName = 'Siti';
+      people.fullName();
+
+      // getter dan setter memiliki kemampuan untuk mengambil dan mengubah data pada sebuah property di object
       const person = {
         firstName: 'Agung',
         lastName: 'Kurniawan',
