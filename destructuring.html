@@ -39,7 +39,7 @@
       const {
         firstName,
         lastName,
-        address: { street, city, country }, //destructuring nested object
+        address: { street, city, country }, //destructuring nested object, maka kita tidak akan bisa memanggil address lagi, karna sudah kita destruct
         ...ext
       } = bio;
 
@@ -87,6 +87,7 @@
         console.info(thridPerson);
       }
 
+      // kita juga bisa mengganti dengan nama varible lain
       {
         const name = {
           firstName: 'Yuli',

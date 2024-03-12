@@ -10,14 +10,15 @@
     <h1>Strict Mode</h1>
 
     <script>
+      'use strict';
       function strictMode() {
-        'use strict';
+        // 'use strict';
         const person = {
           name: 'Agung Kurniawan',
         };
 
         with (person) {
-          // error karna with tidak di sarankan untuk penggunaan use strict
+          // error karna with tidak di sarankan untuk penggunaan use strict/ES5++
           console.info(name);
         }
       }
